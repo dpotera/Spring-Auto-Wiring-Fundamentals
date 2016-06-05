@@ -12,6 +12,7 @@ public class ING implements Bank{
 
     @Override
     public void serve() {
+        System.out.print("Client comes: ");
         client.visit();
     }
 }
