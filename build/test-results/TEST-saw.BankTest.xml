@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="saw.BankTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-06-04T21:16:46" hostname="ubuntu" time="0.004">
+<testsuite name="saw.BankTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-06-05T01:05:43" hostname="ubuntu" time="0.006">
   <properties/>
-  <testcase name="clientExists" classname="saw.BankTest" time="0.002"/>
-  <testcase name="checkClient" classname="saw.BankTest" time="0.001"/>
+  <testcase name="clientExists" classname="saw.BankTest" time="0.003"/>
+  <testcase name="checkClient" classname="saw.BankTest" time="0.0"/>
   <system-out><![CDATA[I'm bank client. I would like to take credit.]]></system-out>
-  <system-err><![CDATA[Jun 04, 2016 11:16:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+  <system-err><![CDATA[Jun 05, 2016 3:05:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-Jun 04, 2016 11:16:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+Jun 05, 2016 3:05:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
-Jun 04, 2016 11:16:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+Jun 05, 2016 3:05:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-Jun 04, 2016 11:16:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+Jun 05, 2016 3:05:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-Jun 04, 2016 11:16:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+Jun 05, 2016 3:05:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
 INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2817085b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15195f61, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71adf47c]
-Jun 04, 2016 11:16:46 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@5354e7da: startup date [Sat Jun 04 23:16:46 CEST 2016]; root of context hierarchy
+Jun 05, 2016 3:05:43 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@5354e7da: startup date [Sun Jun 05 03:05:43 CEST 2016]; root of context hierarchy
 ]]></system-err>
 </testsuite>
