@@ -8,13 +8,16 @@ import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import saw.intefaces.Bank;
 import saw.intefaces.Client;
+import saw.intefaces.Inspection;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=BankConfig.class)
+@ActiveProfiles("dev")
 public class BankTest {
 
     @Rule
@@ -41,5 +44,13 @@ public class BankTest {
     public void checkBankClient(){
         bank.serve();
         assertEquals("Client comes: " + "I'm bank client. I would like to take credit.",log.getLog());
+    }
+
+    @Autowired
+    private Inspection inspection;
+
+    @Test
+    public void checkProfileVariable(){
+        assertNotNull(inspection);
     }
 }
