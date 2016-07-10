@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import saw.annotations.Credit;
 import saw.intefaces.Bank;
 import saw.intefaces.Client;
 import saw.intefaces.Inspection;
@@ -24,6 +25,7 @@ public class BankTest {
     public final StandardOutputStreamLog log = new StandardOutputStreamLog();
 
     @Autowired
+    @Credit
     private Client client;
 
     @Autowired
@@ -43,7 +45,7 @@ public class BankTest {
     @Test
     public void checkBankClient(){
         bank.serve();
-        assertEquals("Client comes: " + "I'm bank client. I would like to take credit.",log.getLog());
+        assertEquals("ING: " + "I'm bank client. I would like to take credit.",log.getLog());
     }
 
     @Autowired

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.002s</div>
+<div class="counter">0.005s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,17 +82,17 @@
 </thead>
 <tr>
 <td class="success">checkBankClient</td>
-<td>0s</td>
+<td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">checkClient</td>
-<td>0s</td>
+<td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">checkProfileVariable</td>
-<td>0s</td>
+<td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -105,24 +105,24 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>I'm bank client. I would like to take credit.Client comes: I'm bank client. I would like to take credit.</pre>
+<pre>I'm bank client. I would like to take credit.ING: I'm bank client. I would like to take credit.</pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jul 08, 2016 4:28:48 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+<pre>Jul 10, 2016 1:26:01 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-Jul 08, 2016 4:28:48 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+Jul 10, 2016 1:26:01 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-Jul 08, 2016 4:28:48 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
-INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-Jul 08, 2016 4:28:48 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+Jul 10, 2016 1:26:01 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
-Jul 08, 2016 4:28:48 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
-INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27223b0f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@72b94512, org.springframework.test.context.support.DirtiesContextTestExecutionListener@486ff3fc]
-Jul 08, 2016 4:28:48 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@2757840: startup date [Fri Jul 08 16:28:48 CEST 2016]; root of context hierarchy
+Jul 10, 2016 1:26:01 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+Jul 10, 2016 1:26:01 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3ba1ae92, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@308fd21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cf0eaf]
+Jul 10, 2016 1:26:01 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@7b5f9934: startup date [Sun Jul 10 13:26:01 CEST 2016]; root of context hierarchy
 </pre>
 </span>
 </div>
@@ -134,7 +134,7 @@ INFO: Refreshing org.springframework.context.support.GenericApplicationContext@2
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.14</a> at Jul 8, 2016 4:28:48 PM</p>
+<a href="http://www.gradle.org">Gradle 2.14</a> at Jul 10, 2016 1:26:01 PM</p>
 </div>
 </div>
 </body>

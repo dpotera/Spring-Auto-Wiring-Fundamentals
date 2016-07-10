@@ -1,9 +1,11 @@
-package saw;
+package saw.clients;
 
 import org.springframework.stereotype.Component;
+import saw.annotations.Credit;
 import saw.intefaces.Client;
 
-@Component("Client")
+@Component
+@Credit
 public class CreditClient implements Client {
     @Override
     public void visit() {
