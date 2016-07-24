@@ -1,6 +1,5 @@
 package saw.clients;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import saw.intefaces.Client;
 
