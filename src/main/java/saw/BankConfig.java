@@ -1,15 +1,14 @@
 package saw;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
+import saw.aspects.BankWorker;
 import saw.notifier.Notifier;
 import saw.notifier.NotifierImpl;
 
 @Configuration
 @ComponentScan("saw")
+@EnableAspectJAutoProxy
 @PropertySource("bank.properties")
 public class BankConfig {
 
@@ -43,7 +42,7 @@ public class BankConfig {
     int random;
 
     @Bean
-    Notifier appNotofier(){
+    public Notifier appNotofier(){
         Notifier ntf = new NotifierImpl(bank);
         ntf.addMessage("#{investClient.clientText} : " + clientVisitResult);
         ntf.addMessage("#{systemProperties['user.timezone']} : " + timezone);
@@ -53,5 +52,12 @@ public class BankConfig {
         ntf.addMessage("#{T(java.lang.Math).random()*150} " + random);
         return ntf;
     }
+
+    // ASPECT
+    @Bean
+    public BankWorker bankWorker(){
+        return new BankWorker();
+    }
+
 
 }

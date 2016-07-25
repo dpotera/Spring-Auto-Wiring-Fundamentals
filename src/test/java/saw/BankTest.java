@@ -45,7 +45,7 @@ public class BankTest {
     @Test
     public void checkBankClient(){
         bank.serve();
-        assertEquals("ING: " + "I'm bank client. I would like to take credit.",log.getLog());
+        assertEquals("ING : " + "I'm bank client. I would like to take credit.",log.getLog());
     }
 
     @Autowired

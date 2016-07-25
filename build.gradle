@@ -14,9 +14,12 @@ repositories {
 
 dependencies {
 	compile "org.springframework:spring-context:4.2.6.RELEASE"
+    compile "org.aspectj:aspectjrt:1.7.3"
+    compile "org.aspectj:aspectjweaver:1.8.9"
 
     testCompile("org.springframework:spring-test:4.2.6.RELEASE")
     testCompile("com.github.stefanbirkner:system-rules:1.5.0")
+
 }
 
 task wrapper(type: Wrapper) {
