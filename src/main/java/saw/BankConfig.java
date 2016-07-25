@@ -15,7 +15,8 @@ public class BankConfig {
 
     // Read some data using Spring Expression Language
     // Read other @Beans Properties
-    @Value("#{Bank.bankName}")
+    // If Bank.bankName is null then "bank name not set" will be returned because of ?: operator
+    @Value("#{Bank.bankName ?: \"bank name not set\"}")
     String bank;
 
     // ?.toUpperCase if value at the left of ? is not null then toUpperCase method will be executed
@@ -29,14 +30,17 @@ public class BankConfig {
     @Value("#{systemProperties['os.name']}")
     String osName;
 
-    // Scientific notation
-    @Value("#{1.5486E4}")
-    int sciNotation;
+    // Scientific notation eq equals to integer
+    @Value("#{1.5486E4 eq 15486}")
+    boolean match;
 
     // Boolean Value
     @Value("#{'1'}")
     boolean bool;
 
+    // Generate random number
+    @Value("#{T(java.lang.Math).random()*150}")
+    int random;
 
     @Bean
     Notifier appNotofier(){
@@ -44,8 +48,9 @@ public class BankConfig {
         ntf.addMessage("#{investClient.clientText} : " + clientVisitResult);
         ntf.addMessage("#{systemProperties['user.timezone']} : " + timezone);
         ntf.addMessage("#{systemProperties['os.name']} : " + osName);
-        ntf.addMessage("#{1.5486E4} : " + sciNotation);
+        ntf.addMessage("#{1.5486E4 matches 15486} : " + match);
         ntf.addMessage("#{'1'} to boolean: " + bool);
+        ntf.addMessage("#{T(java.lang.Math).random()*150} " + random);
         return ntf;
     }
 
