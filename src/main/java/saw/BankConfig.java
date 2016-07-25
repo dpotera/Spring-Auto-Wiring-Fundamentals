@@ -18,7 +18,8 @@ public class BankConfig {
     @Value("#{Bank.bankName}")
     String bank;
 
-    @Value("#{investClient.clientText}")
+    // ?.toUpperCase if value at the left of ? is not null then toUpperCase method will be executed
+    @Value("#{investClient.clientText?.toUpperCase()}")
     String clientVisitResult;
 
     // Read SystemPorperties uing SpEL  #{}
@@ -28,12 +29,23 @@ public class BankConfig {
     @Value("#{systemProperties['os.name']}")
     String osName;
 
+    // Scientific notation
+    @Value("#{1.5486E4}")
+    int sciNotation;
+
+    // Boolean Value
+    @Value("#{'1'}")
+    boolean bool;
+
+
     @Bean
     Notifier appNotofier(){
         Notifier ntf = new NotifierImpl(bank);
-        ntf.addMessage("@Value(\"#{investClient.clientText}\") : " + clientVisitResult);
-        ntf.addMessage("@Value(\"#{systemProperties['user.timezone']}\") : " + timezone);
-        ntf.addMessage("@Value(\"#{systemProperties['os.name']}\") : " + osName);
+        ntf.addMessage("#{investClient.clientText} : " + clientVisitResult);
+        ntf.addMessage("#{systemProperties['user.timezone']} : " + timezone);
+        ntf.addMessage("#{systemProperties['os.name']} : " + osName);
+        ntf.addMessage("#{1.5486E4} : " + sciNotation);
+        ntf.addMessage("#{'1'} to boolean: " + bool);
         return ntf;
     }
 

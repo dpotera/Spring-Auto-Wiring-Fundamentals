@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5632d1d-646e-4284-95a1-2c194e2da9ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/saw/notifier/NotifierImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/saw/intefaces/Bank.java" afterPath="$PROJECT_DIR$/src/main/java/saw/banks/Bank.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/saw/intefaces/Client.java" afterPath="$PROJECT_DIR$/src/main/java/saw/clients/Client.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/saw/intefaces/Inspection.java" afterPath="$PROJECT_DIR$/src/main/java/saw/inspections/Inspection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/BankApplication.java" afterPath="$PROJECT_DIR$/src/main/java/saw/BankApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/BankConfig.java" afterPath="$PROJECT_DIR$/src/main/java/saw/BankConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/banks/BankImpl.java" afterPath="$PROJECT_DIR$/src/main/java/saw/banks/BankImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/clients/CreditClient.java" afterPath="$PROJECT_DIR$/src/main/java/saw/clients/CreditClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/clients/InvestClient.java" afterPath="$PROJECT_DIR$/src/main/java/saw/clients/InvestClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/clients/newClient.java" afterPath="$PROJECT_DIR$/src/main/java/saw/clients/newClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/saw/inspections/NationalInspection.java" afterPath="$PROJECT_DIR$/src/main/java/saw/inspections/NationalInspection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/bank.properties" afterPath="$PROJECT_DIR$/src/main/resources/bank.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/saw/BankTest.java" afterPath="$PROJECT_DIR$/src/test/java/saw/BankTest.java" />
     </list>
     <ignored path="saw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -176,8 +163,8 @@
       <file leaf-file-name="BankConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/saw/BankConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="179">
+              <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -1195,12 +1182,12 @@
       <workItem from="1468148705340" duration="1753000" />
       <workItem from="1468187910788" duration="54000" />
       <workItem from="1469382298348" duration="7817000" />
-      <workItem from="1469447415457" duration="3948000" />
+      <workItem from="1469447415457" duration="4937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15353000" />
+    <option name="totallyTimeSpent" value="16342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1213,7 +1200,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1682,8 +1669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/saw/BankConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
           <folding />
         </state>
       </provider>
