@@ -1,4 +1,4 @@
-package saw.intefaces;
+package saw.inspections;
 
 public interface Inspection {
     void inspect();

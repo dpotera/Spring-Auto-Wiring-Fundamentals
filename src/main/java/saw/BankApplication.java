@@ -2,7 +2,8 @@ package saw;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
-import saw.intefaces.Bank;
+import saw.banks.Bank;
+import saw.notifier.Notifier;
 
 public class BankApplication {
     public static void main(String args[]){
@@ -17,10 +18,13 @@ public class BankApplication {
         // Get property in indicated type (Integer)
         int bankYear = env.getProperty("bank.year",Integer.class);
 
+        // Print recived properties
         System.out.println("ApplicationEnvironment.getProperty('bank.name') = " + bankName);
         System.out.println("ApplicationEnvironment.getProperty('bank.year',Integer.class) = " + bankYear +
             " after incrementation = " + ++bankYear);
 
+        Notifier notifier = context.getBean(Notifier.class);
+        notifier.print();
 
         Bank bank = context.getBean(Bank.class);
         bank.serve();

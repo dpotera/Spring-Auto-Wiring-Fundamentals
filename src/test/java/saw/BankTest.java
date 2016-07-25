@@ -12,9 +12,9 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import saw.annotations.Credit;
-import saw.intefaces.Bank;
-import saw.intefaces.Client;
-import saw.intefaces.Inspection;
+import saw.banks.Bank;
+import saw.clients.Client;
+import saw.inspections.Inspection;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=BankConfig.class)

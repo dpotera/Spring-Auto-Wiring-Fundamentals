@@ -1,7 +1,6 @@
 package saw.clients;
 
 import org.springframework.stereotype.Component;
-import saw.intefaces.Client;
 
 @Component
 public class newClient implements Client{

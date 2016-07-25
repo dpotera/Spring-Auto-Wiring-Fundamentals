@@ -2,7 +2,6 @@ package saw.clients;
 
 import org.springframework.stereotype.Component;
 import saw.annotations.Credit;
-import saw.intefaces.Client;
 
 @Component
 @Credit

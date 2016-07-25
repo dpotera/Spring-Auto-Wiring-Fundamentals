@@ -1,4 +1,4 @@
-package saw.intefaces;
+package saw.banks;
 
 public interface Bank {
     void serve();
